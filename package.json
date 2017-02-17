@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DiDream/gulp-scripts.git"
+    "url": "git+https://github.com/DiDream/gulp-simple-web.git"
   },
   "author": "Alex Jimmy Montaño - @DiDream",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DiDream/gulp-scripts/issues"
+    "url": "https://github.com/DiDream/gulp-simple-web/issues"
   },
-  "homepage": "https://github.com/DiDream/gulp-scripts#readme",
+  "homepage": "https://github.com/DiDream/gulp-simple-web#readme",
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
