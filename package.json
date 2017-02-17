@@ -1,0 +1,25 @@
+{
+  "name": "gulp-scripts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiDream/gulp-scripts.git"
+  },
+  "author": "Alex Jimmy Montaño - @DiDream",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DiDream/gulp-scripts/issues"
+  },
+  "homepage": "https://github.com/DiDream/gulp-scripts#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
