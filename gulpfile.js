@@ -6,7 +6,7 @@ var
     sass = require('gulp-sass');
 
     gulp.task('sass', () => {
-        return gulp.src(`sass/**/*.scss`)
+        return gulp.src(`sass/**/*.{scss,sass}`)
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(`app/css`));
     })
@@ -26,7 +26,7 @@ var
 
     gulp.task('simple-web',['browserSync'], () => {
         console.log("Iniciando...");
-        gulp.watch(`sass/**/*.scss`, ['sass', browserSync.reload]);
+        gulp.watch(`sass/**/*.{scss,sass}`, ['sass', browserSync.reload]);
         gulp.watch(`pug/**/*.pug`, ['pug', browserSync.reload]);
         // gulp.watch(folder + '/app/**/*.{html,css,js}', browserSync.reload);
 
