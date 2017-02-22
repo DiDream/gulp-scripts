@@ -4,7 +4,8 @@ var
     browserSync = require('browser-sync'),
     pug = require('gulp-pug'),
     sass = require('gulp-sass'),
-    config = require('./config.json');
+    config = require('./config.json'),
+    argv = require('yargs').argv;
 
 
 var
@@ -36,7 +37,13 @@ gulp.task('pug', ()=> {
 
 gulp.task('simple-web',['browserSync'], () => {
     console.log("Iniciando...");
-    gulp.watch(`${dev}/sass/**/*.{scss,sass}`, ['sass', browserSync.reload]);
-    gulp.watch(`${dev}/pug/**/*.pug`, ['pug', browserSync.reload]);
+    argv.nosass?
+        gulp.watch(`${prod}/**/*.css`, browserSync.reload):
+        gulp.watch(`${dev}/sass/**/*.{scss,sass}`, ['sass', browserSync.reload]);
+
+    argv.nopug?
+        gulp.watch(`${prod}/**/*.html`, browserSync.reload):
+        gulp.watch(`${dev}/pug/**/*.pug`, ['pug', browserSync.reload]);
+
 
 });

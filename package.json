@@ -13,6 +13,9 @@
   },
   "author": "Alex Jimmy Montaño - @DiDream",
   "license": "MIT",
+  "bin": {
+    "simpleweb": "bin/simple-web.js"
+  },
   "bugs": {
     "url": "https://github.com/DiDream/gulp-simple-web/issues"
   },
@@ -22,5 +25,9 @@
     "gulp": "^3.9.1",
     "gulp-pug": "^3.2.0",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.7.6",
+    "yargs": "^6.6.0"
   }
 }
