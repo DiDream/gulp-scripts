@@ -28,7 +28,7 @@ gulp.task('sass', () => {
 gulp.task('browserSync', () => {
     browserSync.init({
         server: { baseDir: prod},
-        browser: browser // Indica que navegador se utilizará
+        browser: browser
     })
 });
 gulp.task('pug', ()=> {

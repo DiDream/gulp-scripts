@@ -11,6 +11,5 @@ var
     options.push(process.cwd())
 
     options.push('--cwd');
-    options.push( __dirname +'/')
-    console.log(options);
+    options.push( __dirname +'/..')
 spawn("gulp", options, {stdio: 'inherit'});
