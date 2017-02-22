@@ -5,14 +5,18 @@ var
     pug = require('gulp-pug'),
     sass = require('gulp-sass'),
     config = require('./config.json'),
-    argv = require('yargs').argv;
+    argv = require('yargs').argv,
+    path = argv.path || '';
 
 
 var
     browser = config.browser,
-    dev = config.folder.development || '.',
-    prod = config.folder.production || '.',
+    dev = path + config.folder.development || '.',
+
+    prod = path + config.folder.production || '.',
     partials = config.folder.partials;
+
+
 
 
 

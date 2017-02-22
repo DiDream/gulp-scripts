@@ -1,8 +1,8 @@
 {
     "browser": "firefox",
     "folder": {
-        "development": "app/development",
-        "production": "app/folder",
+        "development": "development",
+        "production": "",
         "partials": "partials"
     }
 }

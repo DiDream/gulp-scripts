@@ -7,5 +7,10 @@ var
 
     if(argv.nopug) options.push("--nopug");
     if(argv.nosass) options.push("--nosass");
-    
+    options.push('--path');
+    options.push(process.cwd())
+
+    options.push('--cwd');
+    options.push( __dirname +'/')
+    console.log(options);
 spawn("gulp", options, {stdio: 'inherit'});
