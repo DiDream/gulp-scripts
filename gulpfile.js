@@ -6,8 +6,8 @@ var
     sass = require('gulp-sass'),
     config = require('./config.json'),
     argv = require('yargs').argv,
-    path = argv.path || '';
-
+    path = argv.path || '.';
+    path += '/';
 
 var
     browser = config.browser,
