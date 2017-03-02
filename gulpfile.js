@@ -49,5 +49,6 @@ gulp.task('simple-web',['browserSync'], () => {
         gulp.watch(`${prod}/**/*.html`, browserSync.reload):
         gulp.watch(`${dev}/pug/**/*.pug`, ['pug', browserSync.reload]);
 
+    gulp.watch(`${prod}/**/*.js`, browserSync.reload);
 
 });
