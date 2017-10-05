@@ -28,7 +28,8 @@ gulp.task('sass', () => {
 gulp.task('browserSync', () => {
     browserSync.init({
         server: { baseDir: prod},
-        browser: browser
+        browser: browser,
+        port: argv.port
     })
 });
 gulp.task('pug', ()=> {
